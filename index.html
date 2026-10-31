@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Peptides Memphis: Exploring Biotechnology, Research, and Innovation</title>
+<meta name="description" content="Peptide science, biotechnology, and pharmaceutical research in Memphis, Tennessee: how peptides work, how they are studied, and how to evaluate peptide products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B2545;--teal:#0E8C8C;--teal-d:#0A6B6D;--mint:#E8F5F2;--amber:#F2A33A;--ink:#1B2B3A;--muted:#566574;--line:#D6E3E3;--bg:#FFFFFF;--soft:#F5FAF9;--card:#FFFFFF;--onnavy:#DCE8F2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1620;--soft:#0F1E2B;--card:#13273A;--ink:#E4EDF3;--muted:#9DB0BF;--line:#23394C;--mint:#10303A;--teal:#32C0BE;--teal-d:#5ED3D0}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:'Manrope',system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;font-size:17px}
+h1,h2,h3{font-family:'Fraunces',Georgia,'Times New Roman',serif;color:var(--ink);line-height:1.2;margin:0 0 .6em}
+a{color:var(--teal-d);font-weight:600;text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--amber)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 28px}
+.narrow{max-width:820px}
+
+/* Header: one line */
+header{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;border-bottom:3px solid var(--teal);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px;flex-wrap:nowrap}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:700;white-space:nowrap}
+.logo:hover{color:#fff}
+.logo svg{width:32px;height:32px;flex:none}
+nav{display:flex;align-items:center;gap:26px;white-space:nowrap}
+nav a{color:var(--onnavy);text-decoration:none;font-size:15px;font-weight:600}
+nav a:hover{color:var(--amber)}
+.btn{display:inline-block;background:var(--amber);color:#0B2545!important;padding:11px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
+.btn:hover{background:#fff}
+@media(max-width:900px){nav a.hide{display:none}}
+@media(max-width:560px){.logo{font-size:18px}.btn{padding:9px 14px;font-size:14px}.bar{height:62px}nav{gap:12px}nav a:not(.btn){display:none}}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#0B2545 0%,#0A4A5E 60%,#0E8C8C 130%);color:#fff;padding:88px 0 96px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border-radius:50%;border:60px solid rgba(255,255,255,.05)}
+.hero h1{color:#fff;font-size:clamp(34px,5.4vw,60px);max-width:900px}
+.hero .intro{font-size:19px;color:var(--onnavy);max-width:820px;margin:0 0 1em}
+.hero .intro a{color:var(--amber)}
+.hero .intro a:hover{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.chips span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:7px 16px;border-radius:999px;font-size:14px;font-weight:600}
+
+/* Sections */
+section{padding:76px 0}
+section:nth-of-type(even){background:var(--soft)}
+h2{font-size:clamp(28px,3.6vw,40px);padding-left:18px;border-left:6px solid var(--teal)}
+p{margin:0 0 1.1em}
+.list{list-style:none;padding:0;margin:1.2em 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.list li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:10px;padding:14px 18px;font-weight:600}
+.steps{list-style:none;padding:0;margin:1.4em 0;counter-reset:s}
+.steps li{counter-increment:s;position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px 18px 74px;margin-bottom:12px}
+.steps li:before{content:counter(s);position:absolute;left:18px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:var(--teal);color:#fff;font-weight:700;display:grid;place-items:center;font-family:'Fraunces',Georgia,serif;font-size:19px}
+.steps b{color:var(--ink)}
+.tablebox{overflow-x:auto;margin:1.6em 0;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:600px}
+th{background:var(--navy);color:#fff;text-align:left;padding:14px 18px;font-size:15px}
+td{padding:14px 18px;border-top:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:var(--soft)}
+td:first-child{font-weight:700;color:var(--teal-d)}
+.note{background:var(--mint);border-left:5px solid var(--amber);padding:18px 22px;border-radius:10px;margin:1.6em 0;font-weight:500}
+.checks{list-style:none;padding:0;margin:1.2em 0}
+.checks li{position:relative;padding:12px 0 12px 40px;border-bottom:1px dashed var(--line)}
+.checks li:before{content:"";position:absolute;left:4px;top:17px;width:20px;height:20px;border-radius:50%;background:var(--teal);box-shadow:inset 0 0 0 5px var(--card);border:3px solid var(--teal)}
+
+/* Conclusion */
+.concl{background:var(--navy)!important;color:var(--onnavy)}
+.concl h2{color:#fff}
+
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+summary{cursor:pointer;padding:18px 56px 18px 22px;font-weight:700;position:relative;list-style:none;color:var(--ink)}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:26px;color:var(--teal);transition:transform .2s}
+details[open] summary:after{transform:translateY(-50%) rotate(45deg)}
+details[open] summary{border-bottom:1px solid var(--line);background:var(--mint)}
+details p{padding:16px 22px 4px;margin:0 0 12px;color:var(--muted)}
+
+/* Footer */
+footer{background:#071A33;color:var(--onnavy);padding:56px 0 28px;border-top:4px solid var(--teal);padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px}
+footer h3{color:#fff;font-size:19px;margin-bottom:.8em}
+footer p{color:#B3C4D4;font-size:15px}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:8px}
+footer a{color:#B3C4D4;font-weight:500;text-decoration:none}
+footer a:hover{color:var(--amber)}
+.social{display:flex;gap:12px;margin-top:6px;flex-wrap:wrap}
+.social a{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);display:grid;place-items:center;color:#fff}
+.social a:hover{background:var(--amber);color:#0B2545}
+.social svg{width:20px;height:20px;fill:currentColor}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;font-size:14px;color:#8FA3B5;text-align:center}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr}section{padding:56px 0}.hero{padding:60px 0 68px}body{font-size:16px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Peptides Memphis home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="8" cy="22" r="4.5" fill="#F2A33A"/><circle cx="16" cy="10" r="4.5" fill="#32C0BE"/><circle cx="24" cy="22" r="4.5" fill="#fff"/><path d="M11 19l3.5-6M19 13l3.5 6M12.5 22h7" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      Peptides Memphis
+    </a>
+    <nav aria-label="Main">
+      <a class="hide" href="#research">Research</a>
+      <a class="hide" href="#development">Development</a>
+      <a class="hide" href="#quality">Quality</a>
+      <a class="hide" href="#categories">Products</a>
+      <a class="hide" href="#faq">FAQs</a>
+      <a class="btn" href="https://peptidesmemphis.com/">Visit Website</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <h1>Peptides Memphis: Exploring Biotechnology, Research, and Innovation</h1>
+    <p class="intro">Peptide science is an important part of modern biotechnology, pharmaceutical development, and molecular biology. As researchers continue exploring the functions of amino acids and biological signaling, peptides are receiving attention for their role in scientific discovery and the development of certain medicines.</p>
+    <p class="intro"><a href="https://peptidesmemphis.com/">Peptides Memphis</a> is a search term that connects interest in peptide-related products and information with the broader scientific and healthcare environment of Memphis, Tennessee. The city has a strong connection to medical research, healthcare education, and life sciences, making it an interesting location for exploring developments in biotechnology.</p>
+    <p class="intro">Understanding this subject involves more than learning about individual peptide products. It also means examining scientific collaboration, laboratory research, pharmaceutical innovation, and the importance of reliable medical information.</p>
+    <div class="chips"><span>Molecular Biology</span><span>Pharmaceutical Science</span><span>Laboratory Analysis</span><span>Clinical Evidence</span></div>
+  </div>
+</div>
+
+<section id="research">
+  <div class="wrap narrow">
+    <h2>Memphis and Its Connection to Medical Research</h2>
+    <p>Memphis is recognized for its healthcare institutions, medical education, and research activities. Its broader life sciences environment provides opportunities for scientific professionals to study different areas of medicine and biotechnology.</p>
+    <p>Research institutions and healthcare organizations contribute to scientific progress through laboratory investigations, clinical research, professional education, and collaboration.</p>
+    <p>Peptide science fits into this wider environment because peptides are involved in many biological processes. Researchers investigate their molecular characteristics and interactions to better understand how specific compounds may have pharmaceutical applications.</p>
+    <div class="note">The presence of a developed healthcare and research environment does not mean every peptide product available commercially has been scientifically validated. Each product must be evaluated according to its own evidence and regulatory status.</div>
+  </div>
+</section>
+
+<section id="molecular">
+  <div class="wrap narrow">
+    <h2>The Role of Peptides in Molecular Biology</h2>
+    <p>Peptides are molecules made from amino acids connected through peptide bonds. Their structures can range from relatively simple chains to more complex arrangements with specialized biological properties.</p>
+    <p>In the human body, peptides participate in several important functions, including:</p>
+    <ul class="list">
+      <li>Cellular communication</li>
+      <li>Hormonal signaling</li>
+      <li>Regulation of biological processes</li>
+      <li>Interaction with specific receptors</li>
+      <li>Communication between different tissues</li>
+    </ul>
+    <p>Scientists study these functions to understand how peptide molecules influence biological systems. Such research may contribute to the development of new pharmaceutical approaches.</p>
+  </div>
+</section>
+
+<section id="academic">
+  <div class="wrap narrow">
+    <h2>Academic Research and Scientific Collaboration</h2>
+    <p>Academic institutions play an important role in advancing peptide science. Universities, research laboratories, medical centers, and biotechnology organizations may contribute different types of expertise.</p>
+    <p>Some researchers focus on molecular structures, while others investigate biological activity, disease mechanisms, or potential therapeutic applications.</p>
+    <p>Collaboration allows scientists to combine laboratory findings with clinical knowledge and specialized analytical techniques.</p>
+    <p>Memphis’s medical and academic environment makes scientific collaboration an important subject when discussing the wider biotechnology landscape. However, individual research projects and institutional activities should always be verified through their official publications.</p>
+  </div>
+</section>
+
+<section id="development">
+  <div class="wrap narrow">
+    <h2>Peptide Research in Pharmaceutical Development</h2>
+    <p>Pharmaceutical development involves a detailed process of evaluating a compound before it can become an approved medicine.</p>
+    <p>Peptides may be investigated for their ability to interact with specific biological targets. Researchers examine molecular properties, potential activity, stability, and possible safety concerns.</p>
+    <p>Development commonly involves several broad stages:</p>
+    <ol class="steps">
+      <li><b>Early scientific investigation:</b> Researchers study the molecule and its biological characteristics.</li>
+      <li><b>Laboratory evaluation:</b> Experiments help investigate molecular behavior and possible biological activity.</li>
+      <li><b>Preclinical research:</b> Appropriate studies examine important safety and biological questions before human testing.</li>
+      <li><b>Clinical evaluation:</b> When authorized, clinical studies investigate safety and effectiveness in people.</li>
+      <li><b>Regulatory assessment:</b> Relevant authorities review the available evidence before a medicine can receive approval for specified uses.</li>
+    </ol>
+    <p>Not every investigated peptide reaches the clinical or commercial stages. Many compounds remain experimental or are discontinued during development.</p>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="narrow" style="margin:0 auto">
+      <h2>Different Areas of Peptide Innovation</h2>
+      <p>Peptide research covers several scientific areas. Each has its own research questions and potential applications.</p>
+    </div>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Research area</th><th>Main focus</th><th>Scientific importance</th></tr></thead>
+        <tbody>
+          <tr><td>Molecular biology</td><td>Peptide structure and biological interactions</td><td>Improves understanding of cellular processes</td></tr>
+          <tr><td>Pharmaceutical science</td><td>Development of peptide-based medicines</td><td>Supports drug discovery</td></tr>
+          <tr><td>Analytical chemistry</td><td>Identification and characterization</td><td>Helps evaluate molecular quality</td></tr>
+          <tr><td>Biotechnology</td><td>Scientific tools and biological applications</td><td>Supports research innovation</td></tr>
+          <tr><td>Clinical research</td><td>Evaluation of medical applications</td><td>Helps establish safety and effectiveness</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="narrow" style="margin:0 auto"><p>These areas often work together to improve understanding of peptide molecules and their potential roles in medicine.</p></div>
+  </div>
+</section>
+
+<section id="lab">
+  <div class="wrap narrow">
+    <h2>Laboratory Technology and Scientific Analysis</h2>
+    <p>Modern peptide research depends on specialized laboratory equipment and analytical methods. Scientists need reliable ways to identify molecules, examine their structures, and detect unwanted substances.</p>
+    <p>Techniques such as chromatography and mass spectrometry can help characterize peptide samples. Other laboratory methods may be used to investigate biological interactions and molecular behavior.</p>
+    <p>Accurate documentation is also essential. Researchers maintain records of experimental conditions, sample identification, analytical findings, and study limitations.</p>
+    <p>Laboratory results should be interpreted carefully because a successful experiment does not automatically establish a medical benefit.</p>
+  </div>
+</section>
+
+<section id="quality">
+  <div class="wrap narrow">
+    <h2>Quality Standards and Responsible Research</h2>
+    <p>Quality management is important throughout scientific investigation and pharmaceutical development. Inconsistent materials or unreliable analytical procedures can affect research conclusions.</p>
+    <p>Responsible research environments emphasize documented methods, suitable laboratory controls, sample traceability, and appropriate quality procedures. To see how this applies in practice, explore the guidance on <a href="https://example.com/REPLACE-WITH-YOUR-SECOND-LINK">peptide quality standards and research materials</a> before comparing any products.</p>
+    <p>For peptide-related products, it is also important to distinguish between laboratory research materials and medicines intended for human use.</p>
+    <div class="note">Research-only products are not established treatments. Consumers should not assume that laboratory purity claims or commercial availability demonstrate human safety or effectiveness.</div>
+  </div>
+</section>
+
+<section id="categories">
+  <div class="wrap">
+    <div class="narrow" style="margin:0 auto">
+      <h2>Understanding Peptide Product Categories</h2>
+      <p>People searching for Peptides Memphis may encounter different types of products and services. Understanding their classifications is essential.</p>
+    </div>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Product category</th><th>Intended purpose</th><th>Important distinction</th></tr></thead>
+        <tbody>
+          <tr><td>FDA-approved peptide medicines</td><td>Specific authorized medical uses</td><td>Supported by the applicable approval process</td></tr>
+          <tr><td>Compounded preparations</td><td>Preparation under applicable pharmacy requirements</td><td>Not automatically FDA-approved</td></tr>
+          <tr><td>Investigational peptides</td><td>Scientific and clinical development</td><td>May not be approved for treatment</td></tr>
+          <tr><td>Research-only materials</td><td>Laboratory investigation</td><td>Not established for human use</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="narrow" style="margin:0 auto"><p>Before considering any peptide-related product, individuals should verify its classification and seek appropriate professional guidance.</p></div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap narrow">
+    <h2>The Importance of Scientific Publications</h2>
+    <p>Scientific publications help communicate research findings to the wider medical and scientific community. They allow researchers to explain their methods, present results, and discuss limitations.</p>
+    <p>When evaluating a peptide-related claim, readers should look for studies that clearly identify the compound and explain the research design.</p>
+    <p>It is also important to distinguish between different types of evidence. Laboratory research, animal studies, observational research, and randomized clinical trials answer different questions.</p>
+    <div class="note">A single promising study should not be treated as conclusive proof. Strong medical conclusions require an appropriate body of evidence.</div>
+  </div>
+</section>
+
+<section id="explore">
+  <div class="wrap narrow">
+    <h2>How to Explore Peptide-Related Information in Memphis</h2>
+    <p>Individuals interested in peptide science in Memphis can explore educational resources, scientific publications, healthcare organizations, and biotechnology-related information.</p>
+    <p>When researching a local provider or service, consider these points:</p>
+    <ul class="checks">
+      <li>Confirm the organization’s identity and professional credentials.</li>
+      <li>Understand whether it provides medical care, laboratory research, or general education.</li>
+      <li>Check the regulatory status of any product being discussed.</li>
+      <li>Look for credible scientific evidence.</li>
+      <li>Avoid services promising guaranteed medical outcomes.</li>
+      <li>Discuss treatment-related questions with a qualified healthcare professional.</li>
+    </ul>
+    <p>These steps help create a clearer understanding of what different organizations actually offer.</p>
+  </div>
+</section>
+
+<section id="future">
+  <div class="wrap narrow">
+    <h2>Future Opportunities in Peptide Biotechnology</h2>
+    <p>Peptide biotechnology continues to develop as researchers improve molecular analysis, pharmaceutical research methods, and biological testing.</p>
+    <p>Future investigations may explore new peptide structures, targeted biological interactions, and additional pharmaceutical applications.</p>
+    <p>Advances in computational biology may also help scientists study molecular properties and identify promising research directions.</p>
+    <p>Memphis’s wider healthcare and research environment offers an important setting for understanding how medical education, scientific collaboration, and biotechnology contribute to innovation.</p>
+    <div class="note">Nevertheless, future possibilities should not be confused with established treatments. Every potential medical application requires appropriate scientific evidence and regulatory evaluation.</div>
+  </div>
+</section>
+
+<section class="concl" id="conclusion">
+  <div class="wrap narrow">
+    <h2>Conclusion</h2>
+    <p>Peptides Memphis represents an interesting connection between peptide science, biotechnology, medical research, and pharmaceutical innovation. Memphis’s broader healthcare and academic environment provides a useful context for exploring how scientific collaboration and laboratory technology contribute to modern medicine.</p>
+    <p>Understanding peptide development requires attention to molecular biology, analytical research, quality standards, and clinical evidence. It is equally important to distinguish approved medicines from compounded preparations and experimental research materials.</p>
+    <p>By using reliable scientific publications, verifying product classifications, and seeking qualified medical guidance, readers can develop a more accurate understanding of peptide science and its evolving role in healthcare.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap narrow">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <details open><summary>1. What does Peptides Memphis refer to?</summary><p>Peptides Memphis is a search term associated with peptide-related products, services, research, and educational information connected with Memphis, Tennessee.</p></details>
+    <details><summary>2. What are peptides made from?</summary><p>Peptides are made from amino acids joined together through chemical bonds called peptide bonds.</p></details>
+    <details><summary>3. Why are peptides important in biotechnology?</summary><p>Peptides participate in biological signaling and other physiological processes. Researchers study them to understand their functions and investigate possible pharmaceutical applications.</p></details>
+    <details><summary>4. Does Memphis have a connection to medical research?</summary><p>Memphis has a broader healthcare, medical education, and research environment. Specific research activities should be confirmed through the relevant institutions.</p></details>
+    <details><summary>5. How are peptides studied in laboratories?</summary><p>Scientists use analytical techniques, molecular experiments, and biological testing to investigate peptide structures, characteristics, and interactions.</p></details>
+    <details><summary>6. Are all peptide products FDA-approved?</summary><p>No. Some peptide medicines are approved for specific uses, while others are compounded preparations, investigational compounds, or research-only materials.</p></details>
+    <details><summary>7. What is the role of clinical research in peptide development?</summary><p>Clinical research evaluates medical questions such as safety and effectiveness in people under appropriate study conditions.</p></details>
+    <details><summary>8. What is the difference between peptide research and peptide treatment?</summary><p>Peptide research investigates scientific properties and possible applications. Medical treatment involves products and uses supported by appropriate evidence and regulatory authorization.</p></details>
+    <details><summary>9. Why is peptide quality testing important?</summary><p>Testing helps evaluate molecular identity, purity, and other relevant quality characteristics. The appropriate tests depend on the product and its intended purpose.</p></details>
+    <details><summary>10. Can research peptides be used as approved medicines?</summary><p>No. Research-only materials should not be assumed to be safe or effective for human treatment.</p></details>
+    <details><summary>11. How can I find reliable peptide information in Memphis?</summary><p>Explore official institutional resources, peer-reviewed publications, recognized healthcare organizations, and qualified medical professionals.</p></details>
+    <details><summary>12. What is the future of peptide research?</summary><p>Future research may expand knowledge of peptide biology and support pharmaceutical innovation, but potential treatments must undergo appropriate scientific and regulatory evaluation.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h3>Peptides Memphis</h3>
+        <p>Educational information on peptide science, biotechnology, and pharmaceutical research in Memphis, Tennessee. This content is informational and is not medical advice.</p>
+        <div class="social" aria-label="Social links">
+          <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8S15.600 3.600 14.400 3.600c-2.600 0-4.200 1.600-4.200 4.300v2.600H7.400v3.300h2.800V22z"/></svg></a>
+          <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7.800 2h8.400A5.800 5.800 0 0 1 22 7.800v8.400a5.800 5.800 0 0 1-5.800 5.800H7.800A5.800 5.800 0 0 1 2 16.200V7.800A5.800 5.800 0 0 1 7.800 2zm-.2 2A3.600 3.600 0 0 0 4 7.600v8.800A3.600 3.600 0 0 0 7.600 20h8.800a3.600 3.600 0 0 0 3.600-3.600V7.600A3.600 3.600 0 0 0 16.400 4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.300-3.200a1.200 1.200 0 1 1 0 2.400 1.200 1.200 0 0 1 0-2.400z"/></svg></a>
+          <a href="https://x.com/" aria-label="X (Twitter)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.800 3h3.100l-6.800 7.700L22 21h-6.200l-4.900-6.300L5.300 21H2.200l7.300-8.300L2 3h6.400l4.400 5.800zm-1.100 16.200h1.700L7.400 4.700H5.600z"/></svg></a>
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.900 3A2 2 0 1 1 4.900 7 2 2 0 0 1 4.900 3zM3 9h4v12H3zm7 0h3.800v1.700h.1c.6-1 1.900-2 3.900-2 4.100 0 4.800 2.700 4.800 6.200V21h-4v-5.400c0-1.300 0-3-1.800-3s-2.100 1.400-2.100 2.900V21h-4z"/></svg></a>
+          <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21.600 7.200a2.500 2.500 0 0 0-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 0 0 1.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#research">Medical Research</a></li>
+          <li><a href="#development">Drug Development</a></li>
+          <li><a href="#quality">Quality Standards</a></li>
+          <li><a href="#categories">Product Categories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Learn More</h3>
+        <ul>
+          <li><a href="#publications">Scientific Publications</a></li>
+          <li><a href="#explore">Finding Providers</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="https://peptidesmemphis.com/">Peptides Memphis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 Peptides Memphis. All rights reserved. For educational purposes only; consult a qualified healthcare professional.</div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
